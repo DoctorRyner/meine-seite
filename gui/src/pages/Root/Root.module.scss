@@ -1,0 +1,15 @@
+.page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textBlock {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+  flex-basis: 700px;
+  padding: 24px;
+  height: 400px;
+  font-size: 24px;
+}

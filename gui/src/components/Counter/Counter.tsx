@@ -7,14 +7,14 @@ export const Counter: FC = () => {
   const count = use($count)
   const handleInc = useDsp(incAsync)
   const handleDec = useDsp(dec)
-  const setToZero = useDsp_(setCount(0))
+  const resetCount = useDsp_(setCount(0))
 
   return (
     <div>
       <button onClick={handleInc}>+</button>
       {count}
       <button onClick={handleDec}>-</button>
-      <button onClick={setToZero}>Set to 0</button>
+      <button onClick={resetCount}>Reset</button>
     </div>
   )
 }

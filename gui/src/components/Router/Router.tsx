@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 export type Page = "/" | "test"
 
-export const page: (path: Page) => string = identity
+export const page: (path: Page) => Page = identity
 
 export const Router: FC = () => (
   <BrowserRouter>

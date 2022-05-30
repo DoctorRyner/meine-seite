@@ -1,9 +1,10 @@
+@use "@/styles/theme.scss";
 @import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&display=swap");
 @import "../node_modules/modern-normalize/modern-normalize.css";
 
 html {
-  background-color: hsl(15, 100%, 96%);
+  background-color: theme.$background;
   height: 100%;
 }
 

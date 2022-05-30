@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "scss/dollar-variable-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "font-family-no-missing-generic-family-keyword": null,
+    "color-function-notation": null,
+    "hue-degree-notation": null,
+    "selector-pseudo-class-no-unknown": null
+  }
+}

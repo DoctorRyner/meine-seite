@@ -1,3 +1,26 @@
 {
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": true,
+  "stylelint.validate": ["scss", "css", "sass"],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.ionide": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.vs": true,
+    "node_modules": true,
+    ".vscode": true,
+    "yarn.lock": true,
+    "yarn-error.log": true
+  },
+  "explorerExclude.backup": null
 }

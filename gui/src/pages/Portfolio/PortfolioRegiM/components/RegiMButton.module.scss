@@ -1,0 +1,30 @@
+@use "@/pages/Portfolio/PortfolioRegiM/RegiMTheme.module.scss";
+
+$horizontalPadding: 16px;
+$verticalPadding: 10px;
+$borderRadius: 6px;
+$fontSizeNormal: 14px;
+$fontSizeBig: 16px;
+
+.button {
+  padding: $verticalPadding $horizontalPadding;
+  background-color: RegiMTheme.$primary;
+  color: RegiMTheme.$fontPrimary;
+  border-radius: $borderRadius;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-feature-settings: "liga" off;
+  text-align: center;
+
+  &TypeNormal {
+    height: 40px;
+    font-size: $fontSizeNormal;
+    line-height: 20px;
+  }
+
+  &TypeBig {
+    height: 48px;
+    font-size: $fontSizeBig;
+    line-height: 24px;
+  }
+}

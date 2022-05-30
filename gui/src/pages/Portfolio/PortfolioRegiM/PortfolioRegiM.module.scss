@@ -1,0 +1,29 @@
+@use "@/styles/theme.scss";
+@import url("https://api.fontshare.com/css?f[]=general-sans@400,600&display=swap");
+
+$desktopNavbarHorizontalPadding: 112px;
+$desktopNavbarVerticalPadding: 20px;
+$desktopNavbarHeight: 80px;
+
+.page {
+  height: 100%;
+  font-family: "General Sans";
+}
+
+.navbar {
+  padding: $desktopNavbarVerticalPadding $desktopNavbarHorizontalPadding;
+  width: 100%;
+  height: $desktopNavbarHeight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &Logo {
+    width: 108px;
+    height: 32px;
+  }
+}
+
+:global(html) {
+  background-color: theme.$background;
+}

@@ -1,0 +1,9 @@
+:root {
+  --accent: hsl(15, 100%, 96%);
+  --card: hsl(0, 0%, 100%);
+  --background: white;
+}
+
+$accent: var(--accent);
+$card: var(--card);
+$background: var(--background);

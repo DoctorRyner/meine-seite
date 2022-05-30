@@ -1,3 +1,5 @@
+@use "@/styles/theme.scss";
+
 .page {
   height: 100%;
   display: flex;
@@ -6,7 +8,7 @@
 }
 
 .textBlock {
-  background-color: hsl(0, 0%, 100%);
+  background-color: theme.$card;
   border-radius: 4px;
   flex-basis: 700px;
   padding: 24px;

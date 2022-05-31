@@ -9,6 +9,7 @@
     "font-family-no-missing-generic-family-keyword": null,
     "color-function-notation": null,
     "hue-degree-notation": null,
-    "selector-pseudo-class-no-unknown": null
+    "selector-pseudo-class-no-unknown": null,
+    "declaration-block-no-redundant-longhand-properties": null
   }
 }

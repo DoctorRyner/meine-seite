@@ -2,9 +2,14 @@
 
 $horizontalPadding: 16px;
 $verticalPadding: 10px;
+$verticalPaddingTypeBig: 12px;
 $borderRadius: 6px;
 $fontSizeNormal: 14px;
 $fontSizeBig: 16px;
+$lineHeight: 20px;
+$lineHeightTypeBig: 24px;
+$height: 40px;
+$heightTypeBig: 48px;
 
 .button {
   padding: $verticalPadding $horizontalPadding;
@@ -15,16 +20,21 @@ $fontSizeBig: 16px;
   letter-spacing: 0.01em;
   font-feature-settings: "liga" off;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &TypeNormal {
-    height: 40px;
+    height: $height;
     font-size: $fontSizeNormal;
-    line-height: 20px;
+    line-height: $lineHeight;
   }
 
   &TypeBig {
-    height: 48px;
+    height: $heightTypeBig;
     font-size: $fontSizeBig;
-    line-height: 24px;
+    line-height: $lineHeightTypeBig;
+    padding-top: $verticalPaddingTypeBig;
+    padding-bottom: $verticalPaddingTypeBig;
   }
 }

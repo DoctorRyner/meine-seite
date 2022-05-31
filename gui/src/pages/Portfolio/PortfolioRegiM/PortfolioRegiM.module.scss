@@ -1,13 +1,20 @@
 @use "@/styles/theme.scss";
+@use "@/pages/Portfolio/PortfolioRegiM/RegiMTheme.module.scss";
 @import url("https://api.fontshare.com/css?f[]=general-sans@400,600&display=swap");
 
 $desktopNavbarHorizontalPadding: 112px;
 $desktopNavbarVerticalPadding: 20px;
 $desktopNavbarHeight: 80px;
+$desktopLandingBlockHorizontalPadding: 112px;
+$desktopLandingBlockTopPadding: 32px;
+$desktopLandingBlockBottomPadding: 80px;
+$landingBlock1TitleContainerWidth: 592px;
+$landingBlock1TitleContainerButtonWidth: 165px;
 
 .page {
-  height: 100%;
   font-family: "General Sans";
+  height: 100%;
+  color: RegiMTheme.$neutral;
 }
 
 .navbar {
@@ -17,6 +24,7 @@ $desktopNavbarHeight: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   &Logo {
     width: 108px;
@@ -24,6 +32,50 @@ $desktopNavbarHeight: 80px;
   }
 }
 
+.elipse {
+  position: absolute;
+  z-index: -1;
+  width: 700px;
+  height: 700px;
+  right: -80px;
+  top: -136px;
+  background: RegiMTheme.$secondary100;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 :global(html) {
   background-color: theme.$background;
+  overflow: hidden;
+}
+
+.landingBlock1 {
+  padding-left: $desktopLandingBlockHorizontalPadding;
+  padding-right: $desktopLandingBlockHorizontalPadding;
+  padding-top: $desktopLandingBlockTopPadding;
+  padding-bottom: $desktopLandingBlockBottomPadding;
+  display: flex;
+  gap: 32px;
+
+  &TitleContainer {
+    width: $landingBlock1TitleContainerWidth;
+
+    &Title {
+      font-size: 64px;
+      line-height: 80px;
+      letter-spacing: -0.02em;
+    }
+
+    &Paragraph {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: RegiMTheme.$neutral700;
+    }
+
+    &Button {
+      width: $landingBlock1TitleContainerButtonWidth;
+    }
+  }
 }
